@@ -1,0 +1,44 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font: 20px 'Montserrat',Arial,sans-serif;
+	background: #fff;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.row {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+.row > * {
+	vertical-align: top;
+	display: table-cell;
+}
+.col-r {
+	text-align: right;
+}
+.col-l {
+	text-align: left;
+}
+.wrapper {
+	padding: 0px 10px;
+	max-width: 768px;
+	margin: auto;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

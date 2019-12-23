@@ -1,0 +1,18 @@
+@media (min-width: 320px) and (max-width: 1010px) {
+    main {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 20px;
+        font-size: 18px;
+    }
+}

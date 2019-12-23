@@ -1,0 +1,221 @@
+.level-select {
+    background: #fff;
+}
+.level-select h1 {
+    font-size: 2.4em;
+    font-weight: 300;
+    font-style: italic;
+    padding: 50px 10px 20px;
+    color: #353535;
+}
+.level-select .col {
+    padding: 10px;
+}
+.level {
+    border: 1px solid #808080;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.level:hover {
+    background: #f8f8f8;
+}
+.level h3 {
+    font-weight: normal;
+    color: #808080;
+}
+.level p {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.level .img {
+    background: #eee;
+    height: 170px;
+    margin-bottom: 5px;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 0;
+}
+.level .img::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+.level .img.img__1 {
+    background-image: url('../img/game/map1.jpg');
+}
+.level .img.img__2 {
+    background-image: url('../img/game/map2.jpg');
+}
+.level .img.img__3 {
+    background-image: url('../img/game/map3.jpg');
+}
+.game {
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.game.active {
+    display: flex!important;
+}
+#field {
+    border: 2px solid #808080;
+    width: 700px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+#field.lose {
+    box-shadow: inset 0px 0px 200px 0px rgba(255,0,0,1);
+}
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+#map::before {
+    z-index: -2;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    content: '';
+    display: block;
+    background: #b2b2b2;
+    background-image: url('../img/game-texture.png');
+    width: 300%;
+    height: 300%;
+}
+#map::after {
+    z-index: -1;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    content: '';
+    display: block;
+    background: #b2b2b2;
+    width: 300%;
+    height: 300%;
+    opacity: 0.6;
+
+}
+#exit-arrow::before {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 0;
+    width: 0;
+    display: block;
+    content: '';
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid #9C27B0;
+    margin-top: -11px;
+}
+#exit-arrow {
+    z-index: 100;
+}
+#exit-arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    background: #9C27B0;
+    display: block;
+    content: '';
+}
+#game-message {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    align-items: center;
+}
+#game-message > div {
+    background: #fff;
+    padding: 20px 40px;
+    user-select: none;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 100px 0px rgba(255,0,0,1);
+}
+.mes-image {
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.mes-image.lose {
+    background-image: url('../img/game/lose.png');
+}
+.mes-image.win {
+    background-image: url('../img/game/win.png');
+}
+.mes-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.mes-option > div {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #b2b2b2;
+    border: 1px solid #b2b2b2;
+    cursor: pointer;
+    transition: all 0.1s;
+    width: 170px;
+}
+
+.mes-option > div:hover {
+    color: #212121;
+    border-color: #212121;
+}
+#controls-back {
+    margin-top: 20px;
+}
+#controls, #controls-back {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #b2b2b2;
+    color: #b2b2b2;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+#controls:hover, #controls-back:hover {
+    color: #212121;
+    border-color: #212121;
+}
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+.state.controls {
+    background: #fff;
+    margin-top: 0;
+    text-align: center;
+}
+.controls p {
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: justify;
+}
+.controls-info p {
+    text-align: center;
+    padding-top: 5px;
+}

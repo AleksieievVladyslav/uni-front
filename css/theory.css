@@ -1,0 +1,138 @@
+.theory {
+	font: 20px 'HelveticaNeue',sans-serif;
+	background: #ffffff;
+}
+.top-header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 20vh;
+	color: #353535;
+	padding-top: 20px;	
+	padding-bottom: 30px;
+	font-size: 2.4em;
+	font-weight: 100;
+	font-style: italic;
+}
+.topics-list{
+	width: 100%;
+	max-height: 80vh;
+	overflow-y: scroll;
+}
+.topic-wrapper {
+	transition: all 0.1s linear;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+	font-weight: normal;
+	font-size: 22px;
+	width: 100%;
+	padding-left: 70px;
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+.topic {
+	padding: 10px;
+	cursor: pointer;
+}
+.topic:hover {
+	background: #efefef;
+}
+.passed-topic {
+	color: #4dbd28;
+}
+.topic:hover .passed-topic {
+	color: #3c931f;
+}
+.opened-topic {
+	color: #4dbd28;
+}
+.topic:hover .opened-topic {
+	color: #3c931f;
+}
+.closed-topic {
+	color: #D3D3D3;
+}
+.closed-topic:hover {
+	color: #989898;
+}
+.topic-star {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	color: #dcb042;
+	transform: translateY(-50%) rotate(15deg);
+	font-size: 35px;
+}
+.theory-topic {
+	background: #fff;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.theory-topic > .wrapper {
+	padding-top: 30px;
+	overflow-y: visible;
+}
+.topic-title {
+	font-size: 2em;
+	text-align: center;
+	color: #0652DD;
+	padding-bottom: 30px;
+	font-style: italic;
+}
+.topic-undertitle {
+	font-weight: bold;
+	font-style: italic;
+	padding: 10px 10px;
+	text-align: center;
+	color: #555;
+}
+.topic-paragraph {
+	width: 100%;
+	font-weight: 200;
+	padding: 10px 0px;
+}
+.topic-paragraph.right {
+	text-align: right;
+	padding-left: 30%;
+}
+.topic-paragraph.left {
+	text-align: left;
+	padding-right: 30%;
+}
+.topic-paragraph.center {
+	text-align: center;
+	padding: 10px 15%;
+}
+.topic-paragraph.justify {
+	text-align: justify;
+	padding: 10px 15%;
+}
+.topic-hr {
+	height: 2px;
+	margin: 10px 0px;
+	background: #b2b2b2;
+}
+.topic-listitem {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	padding: 0 5px 10px 20px;
+	font-size: 16px;
+	color: #888888;
+	text-align: justify;
+	list-style: none;
+	font-weight: 400;
+}
+.topic-listitem::before {
+	display: block;
+	content: '';
+	position: absolute;
+	left: 5px;
+	border: 5px solid transparent; 
+	border-left: 10px solid #b2b2b2;
+	width: 0px;
+	height: 0px;
+	box-sizing: content-box;
+	top: 5px;
+}

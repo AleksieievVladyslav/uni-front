@@ -1,0 +1,142 @@
+.help {
+	background: #fff;
+}
+.help .help-faq {
+	width: 100%;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.help .help-faq p {
+	position: relative;
+	padding: 10px 0px 10px 30px;
+	font-weight: 200;
+	cursor: pointer;
+}
+.help .faq-folder {
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.help .faq-folder .title {
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	background: #fff;
+	transition: all 0.3s;
+	user-select: none;
+}
+.help .faq-folder:hover .title{
+	background: #efefef;
+}
+.help .faq-folder .title::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 10px;
+	height: 1px;
+	right: 20px;
+    left: 20px;
+    background: #b2b2b2;
+}
+.help .faq-folder .answer {
+	position: relative;
+	padding: 10px 20px;
+	z-index: -1;
+	transition: all 0.3s;
+}
+.help .faq-folder .answer.active {
+	margin-top: 0!important;
+}
+.help .faq-folder .faq-toggle {
+	position: absolute;
+	top: 11px;
+	right: 30px;
+	width: 40px;
+	width: 40px;
+}
+.help .faq-folder .faq-toggle svg {
+	height: 40px;
+	transition: all 0.3s;
+}
+.help .faq-folder .answer.active + * > svg {
+	transform: rotate(-90deg);
+}
+.help-title {
+	padding: 40px 20px 20px;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: 300;
+	color: #999999;
+}
+.help-title.help-center {
+	text-align: center;
+	padding-top: 20px;
+}
+.help-buttons {
+	width: 100%;
+	text-align: center;
+}
+.help-button {
+	text-align: center;
+	border: 1px solid #0652DD;
+	font-size: 1.2em;
+	padding: 7px 15px;
+	margin-bottom: 15px;
+	color: #0652DD;
+	cursor: pointer;
+	font-weight: 300;
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.help-button:hover {
+	background: #0652DD;
+	color: #fff;
+}
+.more-info {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.contact-us {
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.help-head {
+	font-size: 30px;
+	color: #0652DD;
+	font-weight: 500;
+	width: 600px;
+}
+
+.input {
+	margin-bottom: 10px;
+}
+
+.send-mes {
+	width: 100%;
+	outline: none !important;
+	resize: none;
+	height: 100px;
+	font: inherit;
+	padding: 10px 10px;
+	border: 1px solid #0652DD;
+}
+
+.send-feedb {
+	margin: 20px auto;
+}
+
+.contact-us label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-us .topic-hr {
+	margin-bottom: 30px; 
+}
+
+.contact-us .back-butt {
+	width: 40%;
+}

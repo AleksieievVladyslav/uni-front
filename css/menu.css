@@ -1,0 +1,126 @@
+.menu-col {
+	font: 20px 'HelveticaNeue',sans-serif;
+	width: 256px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: right;
+	background: #193c5c;
+	background-image: url('../img/menu-bg.png');
+    background-position: 40% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.menu-col .toggle {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.menu-col .toggle::before {
+    display: block;
+    content: '';
+    width: 1px;
+    background: #b2b2b2;
+    height: 100%;
+    position: absolute;
+    left: -6px;
+    top: 0;
+}
+.menu-col .toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.menu-col .toggle svg {
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%; 
+    color: #b2b2b2;;
+}
+.menu-col .logo {
+    font-size: 1.4em;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0px 53px 10px 10px;
+    border-bottom: 1px solid #b2b2b2;
+    margin-bottom: 20px;
+}
+.menu-col .logo span {
+    vertical-align: 5px;
+}
+.menu-col .logo svg {
+    padding-right: 8px;
+    height: 35px;
+}
+.menu-col ul {
+	padding-bottom: 20px;
+}
+.menu-col li {
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.menu-col li:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+.menu-col li .icon {
+    display: inline-block;
+    height: 20px;
+    width: 45px;
+    padding: 0 10px;
+    text-align: right;
+    vertical-align: -3px;
+}
+.menu-col li svg {
+    height: 20px;
+    width: 100%;
+    color: #b2b2b2;
+    display: inline-block;
+}
+.copy {
+	font-weight: 300;
+	font-size: 0.7em;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+
+
+.menu-col.small {
+    left: -206px;
+}
+.menu-col.small .toggle {
+    right: 5px;
+    width: 40px;
+}
+.menu-col.small .toggle svg {
+    transform: rotate(180deg);
+}
+.menu-col.small li {
+    padding: 5px 0px;
+}
+.menu-col.small li .icon {
+    width: 50px;
+    padding: 0 15px;
+}
+.menu-col.small .copy {
+    opacity: 0;
+}
