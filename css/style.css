@@ -37,14 +37,14 @@
 .col-sign-r {
     padding-left: 10px;
 }
-.form label {
+.label {
 	font-weight: 600;
 	color: #b2b2b2;
 	font-size: 15px;
 	display: block;
 	user-select: none;
 }
-.form input{
+.input{
 	width: 100%;
 	font-size: 15px;
 	padding: 9px 10px;
@@ -53,7 +53,7 @@
 	outline: none!important;
 	border-radius: 100px;
 }
-.form input:focus {
+.input:focus {
 	border-color: #828282;
 }
 .page-title {
@@ -147,4 +147,57 @@
 	display: block;
 	background: rgba(0,0,0,0.1);
 	z-index: -1;
+}
+.pop-up {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+.pop-up-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+.pop-up-content {
+	background: #fff;
+	position: relative;
+	max-width: 756px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.pop-up-content-title {
+	color: #b2b2b2;
+}
+.pop-up-close {
+	height: 30px;
+	width: 30px;
+	background: #b2b2b2;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+}
+.col-puc {
+	width: 30px;
+}
+.pop-up-close svg {
+	max-height: 100%;
+	max-width: 100%;
+}
+.pop-up-content-body {
+	text-align: center;
+	padding-top: 30px;
+}
+.pop-up-form {
+	padding: 20px 100px 0px;
 }
