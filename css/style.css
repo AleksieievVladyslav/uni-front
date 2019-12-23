@@ -8,7 +8,7 @@
 	transform: translate(-50%, -50%);
 	padding: 20px;
     width: 756px;
-    text-align: center;
+	text-align: center;
 }
 .form .row {
     text-align: left;
@@ -56,13 +56,19 @@
 .form input:focus {
 	border-color: #828282;
 }
-.form-h {
+.page-title {
 	padding-bottom: 20px;
 	text-align: left;
 }
-.form h2{
+.page-title h2{
 	font-size: 3em;
 	font-weight: 300;
+}
+.page-title h4 {
+	font-weight: normal;
+	font-size: 1.5em;
+	font-style: italic;
+	padding-left: 20px;
 }
 .other {
     color: #b2b2b2;
@@ -70,4 +76,75 @@
 }
 .a {
     text-decoration: underline;
+}
+.content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 256px;
+	padding-top: 50px;
+}
+.user-table {
+	font-size: 25px;
+	overflow: hidden;
+}
+.user-table > .row {
+	border: 1px solid #b2b2b2;
+}
+.user-table .cell-h {
+	text-align: center;
+	padding: 10px 0px;
+	color: #888888;
+	user-select: none;
+}
+#user-mail {
+	width: 40%;
+}
+#user-id {
+	background: rgb(238, 238, 238, 0.7);
+	width: 40px;
+}
+#user-id .cell {
+	justify-content: center;
+}
+#user-lastactive {
+	background: rgb(238, 238, 238, 0.7);
+}
+#user-delete {
+	background: rgb(238, 238, 238, 0.7);
+	width: 50px;
+}
+#user-status .cell {
+	cursor: help;
+}
+#user-delete .cell-h {
+	height: 49px;
+}
+#user-delete .cell {
+	justify-content: center;
+	cursor: pointer;
+}
+.user-table > .row > .col {
+	transition: all 0.1s;
+}
+.user-table > .row > .col:hover {
+	background: rgb(204, 204, 204, 0.5)!important;
+}
+.user-table .cell {
+	height: 30px;
+	position: relative;
+}
+.user-table .cell svg {
+	height: 20px;
+}
+.user-table .cell:hover::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -2000px;
+	right: -2000px;
+	content: '';
+	display: block;
+	background: rgba(0,0,0,0.1);
+	z-index: -1;
 }
