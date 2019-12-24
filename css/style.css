@@ -93,42 +93,56 @@
 }
 .user-table .cell-h {
 	text-align: center;
-	padding: 10px 0px;
-	color: #888888;
+	padding: 13px 20px;
+	color: #ffffff;
+	background: #616161;
+	font-size: 17px;
+	text-align: left;
 	user-select: none;
 }
-#user-mail {
+.mail {
 	width: 40%;
 }
-#user-id {
-	background: rgb(238, 238, 238, 0.7);
-	width: 40px;
-}
-#user-id .cell {
+.id .cell, .lastactive .cell, .status .cell {
 	justify-content: center;
 }
-#user-lastactive {
-	background: rgb(238, 238, 238, 0.7);
+.lastactive .cell::before, .status .cell::before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -2;
+	top: 8px;
+	left: 8px;
+	right: 8px;
+	bottom: 8px;
+	border-radius: 8px;
+	background: #dcdcdc;
 }
-#user-delete {
+.cell.warning::before {
+	background: #CDDC39!important;
+}
+.cell.accident {
+	color: #fff;
+}
+.cell.accident::before {
+	background: #FF5722!important;
+}
+.delete {
 	background: rgb(238, 238, 238, 0.7);
 	width: 50px;
 }
-#user-status .cell {
+.status .cell {
 	cursor: help;
 }
-#user-delete .cell-h {
-	height: 49px;
+.cell-h__empty {
+	height: 46px;
 }
-#user-delete .cell {
+.delete .cell {
 	justify-content: center;
 	cursor: pointer;
 }
 .user-table > .row > .col {
 	transition: all 0.1s;
-}
-.user-table > .row > .col:hover {
-	background: rgb(204, 204, 204, 0.5)!important;
 }
 .user-table .cell {
 	height: 30px;
@@ -154,10 +168,13 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	z-index: 3;
+}
+.pop-up.visible {
+	display: flex;
 }
 .pop-up-bg {
 	position: absolute;
@@ -178,17 +195,18 @@
 }
 .pop-up-content-title {
 	color: #b2b2b2;
+	text-align: center;
 }
 .pop-up-close {
 	height: 30px;
 	width: 30px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 	background: #b2b2b2;
 	border-radius: 10px;
 	color: #fff;
 	cursor: pointer;
-}
-.col-puc {
-	width: 30px;
 }
 .pop-up-close svg {
 	max-height: 100%;
@@ -199,5 +217,11 @@
 	padding-top: 30px;
 }
 .pop-up-form {
-	padding: 20px 100px 0px;
+	padding-top: 20px;
+}
+.pop-up-form input {
+	width: 50%;
+}
+.cell-script {
+	cursor: pointer;
 }
